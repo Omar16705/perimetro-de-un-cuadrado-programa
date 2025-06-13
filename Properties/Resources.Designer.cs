@@ -73,6 +73,16 @@ namespace perimetro_de_un_cuadrado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_escoba_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-escoba-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_salida_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-salida-48", resourceCulture);

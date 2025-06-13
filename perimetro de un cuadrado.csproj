@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-salida-48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-escoba-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
