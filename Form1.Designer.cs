@@ -31,27 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbdatoscuadrados = new System.Windows.Forms.GroupBox();
             this.gblimpiar = new System.Windows.Forms.GroupBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnsalirprogram = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtperimetrocuadrad = new System.Windows.Forms.TextBox();
             this.lblperimetroCuadrado = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtblado1 = new System.Windows.Forms.TextBox();
             this.lbllado1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnsalirprogram = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncalcularperimetro = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbdatoscuadrados.SuspendLayout();
             this.gblimpiar.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbdatoscuadrados
@@ -81,6 +81,19 @@
             this.gblimpiar.TabStop = false;
             this.gblimpiar.Text = "Limpiar";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_escoba_32;
+            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.Location = new System.Drawing.Point(74, 22);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(154, 46);
+            this.btnLimpiar.TabIndex = 0;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.btnsalirprogram);
@@ -90,6 +103,20 @@
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Salir del programa";
+            // 
+            // btnsalirprogram
+            // 
+            this.btnsalirprogram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsalirprogram.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_salida_48;
+            this.btnsalirprogram.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsalirprogram.Location = new System.Drawing.Point(64, 28);
+            this.btnsalirprogram.Name = "btnsalirprogram";
+            this.btnsalirprogram.Size = new System.Drawing.Size(153, 65);
+            this.btnsalirprogram.TabIndex = 0;
+            this.btnsalirprogram.Text = "Salir";
+            this.btnsalirprogram.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsalirprogram.UseVisualStyleBackColor = true;
+            this.btnsalirprogram.Click += new System.EventHandler(this.btnsalirprogram_Click);
             // 
             // groupBox4
             // 
@@ -107,6 +134,7 @@
             this.txtperimetrocuadrad.Location = new System.Drawing.Point(247, 53);
             this.txtperimetrocuadrad.Multiline = true;
             this.txtperimetrocuadrad.Name = "txtperimetrocuadrad";
+            this.txtperimetrocuadrad.ReadOnly = true;
             this.txtperimetrocuadrad.Size = new System.Drawing.Size(83, 46);
             this.txtperimetrocuadrad.TabIndex = 1;
             // 
@@ -130,6 +158,15 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Lados del cuadrado";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_emoji_cuadrado_grande_negro_42;
+            this.pictureBox1.Location = new System.Drawing.Point(269, 64);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 37);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // txtblado1
             // 
@@ -168,50 +205,6 @@
             this.label1.Size = new System.Drawing.Size(0, 24);
             this.label1.TabIndex = 1;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 24);
-            this.label2.TabIndex = 1;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_escoba_32;
-            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.Location = new System.Drawing.Point(74, 22);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(154, 46);
-            this.btnLimpiar.TabIndex = 0;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnsalirprogram
-            // 
-            this.btnsalirprogram.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsalirprogram.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_salida_48;
-            this.btnsalirprogram.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsalirprogram.Location = new System.Drawing.Point(64, 28);
-            this.btnsalirprogram.Name = "btnsalirprogram";
-            this.btnsalirprogram.Size = new System.Drawing.Size(153, 65);
-            this.btnsalirprogram.TabIndex = 0;
-            this.btnsalirprogram.Text = "Salir";
-            this.btnsalirprogram.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsalirprogram.UseVisualStyleBackColor = true;
-            this.btnsalirprogram.Click += new System.EventHandler(this.btnsalirprogram_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::perimetro_de_un_cuadrado.Properties.Resources.icons8_emoji_cuadrado_grande_negro_42;
-            this.pictureBox1.Location = new System.Drawing.Point(269, 64);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 37);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // btncalcularperimetro
             // 
             this.btncalcularperimetro.Image = global::perimetro_de_un_cuadrado.Properties.Resources.square256_25198;
@@ -224,6 +217,14 @@
             this.btncalcularperimetro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncalcularperimetro.UseVisualStyleBackColor = true;
             this.btncalcularperimetro.Click += new System.EventHandler(this.btncalcularperimetro_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 24);
+            this.label2.TabIndex = 1;
             // 
             // Form1
             // 
@@ -243,9 +244,9 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
